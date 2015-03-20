@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		046949E51ABB844200928C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046949E41ABB844200928C33 /* AppDelegate.swift */; };
+		046949EC1ABB844200928C33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046949EB1ABB844200928C33 /* Images.xcassets */; };
+		046949EF1ABB844200928C33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046949ED1ABB844200928C33 /* LaunchScreen.xib */; };
+		046949FB1ABB844200928C33 /* InvitePhoneBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046949FA1ABB844200928C33 /* InvitePhoneBookTests.swift */; };
+		04694A081ABB88EF00928C33 /* AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 04694A071ABB88EF00928C33 /* AddressBook.m */; };
+		04694A0B1ABB89EC00928C33 /* ABRecordHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 04694A0A1ABB89EC00928C33 /* ABRecordHolder.m */; };
+		04694A0E1ABB8CB800928C33 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A0D1ABB8CB800928C33 /* MainViewController.swift */; };
+		04694A111ABB8EBA00928C33 /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A101ABB8EBA00928C33 /* InviteViewController.swift */; };
+		04694A131ABB923C00928C33 /* PhoneBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A121ABB923C00928C33 /* PhoneBookViewController.swift */; };
+		04694A161ABB991200928C33 /* TableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A151ABB991200928C33 /* TableData.swift */; };
+		04694A191ABB994900928C33 /* CellDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A181ABB994900928C33 /* CellDataProtocol.swift */; };
+		04694A1B1ABB996100928C33 /* ListGeneratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A1A1ABB996100928C33 /* ListGeneratorProtocol.swift */; };
+		04694A1F1ABB9A8E00928C33 /* OrderedListGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A1E1ABB9A8E00928C33 /* OrderedListGenerator.swift */; };
+		04694A211ABB9AC700928C33 /* PBRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A201ABB9AC700928C33 /* PBRecord.swift */; };
+		04694A231ABB9AF400928C33 /* ExtendedPBRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A221ABB9AF400928C33 /* ExtendedPBRecord.swift */; };
+		04694A251ABB9B6000928C33 /* PhoneBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A241ABB9B6000928C33 /* PhoneBookModel.swift */; };
+		04694A281ABB9D0600928C33 /* UIInviteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A271ABB9D0600928C33 /* UIInviteTableViewCell.swift */; };
+		04694A2A1ABBA04000928C33 /* TableViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A291ABBA04000928C33 /* TableViewConfiguration.swift */; };
+		04694A2C1ABBA0C000928C33 /* PhoneBookViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A2B1ABBA0C000928C33 /* PhoneBookViewControllerDelegate.swift */; };
+		04694A2F1ABBA1FD00928C33 /* BoolValueChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694A2E1ABBA1FD00928C33 /* BoolValueChecker.swift */; };
+		0497EB471ABC3E0E006BB0BC /* InviteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EB461ABC3E0E006BB0BC /* InviteModel.swift */; };
+		0497EB4A1ABC4948006BB0BC /* InviteViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EB491ABC4948006BB0BC /* InviteViewControllerDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		046949F51ABB844200928C33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046949D71ABB844200928C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046949DE1ABB844200928C33;
+			remoteInfo = InvitePhoneBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		046949DF1ABB844200928C33 /* InvitePhoneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvitePhoneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		046949E31ABB844200928C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046949E41ABB844200928C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		046949EB1ABB844200928C33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		046949EE1ABB844200928C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		046949F41ABB844200928C33 /* InvitePhoneBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvitePhoneBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		046949F91ABB844200928C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046949FA1ABB844200928C33 /* InvitePhoneBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitePhoneBookTests.swift; sourceTree = "<group>"; };
+		04694A051ABB88EF00928C33 /* ObjectiveC_Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveC_Bridge.h; sourceTree = "<group>"; };
+		04694A061ABB88EF00928C33 /* AddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBook.h; sourceTree = "<group>"; };
+		04694A071ABB88EF00928C33 /* AddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBook.m; sourceTree = "<group>"; };
+		04694A091ABB89EC00928C33 /* ABRecordHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABRecordHolder.h; sourceTree = "<group>"; };
+		04694A0A1ABB89EC00928C33 /* ABRecordHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABRecordHolder.m; sourceTree = "<group>"; };
+		04694A0D1ABB8CB800928C33 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04694A101ABB8EBA00928C33 /* InviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
+		04694A121ABB923C00928C33 /* PhoneBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneBookViewController.swift; sourceTree = "<group>"; };
+		04694A151ABB991200928C33 /* TableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableData.swift; sourceTree = "<group>"; };
+		04694A181ABB994900928C33 /* CellDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDataProtocol.swift; sourceTree = "<group>"; };
+		04694A1A1ABB996100928C33 /* ListGeneratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListGeneratorProtocol.swift; sourceTree = "<group>"; };
+		04694A1E1ABB9A8E00928C33 /* OrderedListGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedListGenerator.swift; sourceTree = "<group>"; };
+		04694A201ABB9AC700928C33 /* PBRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBRecord.swift; sourceTree = "<group>"; };
+		04694A221ABB9AF400928C33 /* ExtendedPBRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedPBRecord.swift; sourceTree = "<group>"; };
+		04694A241ABB9B6000928C33 /* PhoneBookModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneBookModel.swift; sourceTree = "<group>"; };
+		04694A271ABB9D0600928C33 /* UIInviteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIInviteTableViewCell.swift; sourceTree = "<group>"; };
+		04694A291ABBA04000928C33 /* TableViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewConfiguration.swift; sourceTree = "<group>"; };
+		04694A2B1ABBA0C000928C33 /* PhoneBookViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneBookViewControllerDelegate.swift; sourceTree = "<group>"; };
+		04694A2E1ABBA1FD00928C33 /* BoolValueChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolValueChecker.swift; sourceTree = "<group>"; };
+		0497EB461ABC3E0E006BB0BC /* InviteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteModel.swift; sourceTree = "<group>"; };
+		0497EB491ABC4948006BB0BC /* InviteViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteViewControllerDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		046949DC1ABB844200928C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046949F11ABB844200928C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		046949D61ABB844200928C33 = {
+			isa = PBXGroup;
+			children = (
+				046949E11ABB844200928C33 /* InvitePhoneBook */,
+				046949F71ABB844200928C33 /* InvitePhoneBookTests */,
+				046949E01ABB844200928C33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		046949E01ABB844200928C33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				046949DF1ABB844200928C33 /* InvitePhoneBook.app */,
+				046949F41ABB844200928C33 /* InvitePhoneBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		046949E11ABB844200928C33 /* InvitePhoneBook */ = {
+			isa = PBXGroup;
+			children = (
+				0497EB481ABC4940006BB0BC /* protocols */,
+				0497EB451ABC3E05006BB0BC /* models */,
+				04694A0F1ABB8EAF00928C33 /* invitebook */,
+				04694A0C1ABB8CA500928C33 /* viewcontrollers */,
+				04694A2D1ABBA1EC00928C33 /* utils */,
+				046949E41ABB844200928C33 /* AppDelegate.swift */,
+				046949ED1ABB844200928C33 /* LaunchScreen.xib */,
+				046949E21ABB844200928C33 /* Supporting Files */,
+			);
+			path = InvitePhoneBook;
+			sourceTree = "<group>";
+		};
+		046949E21ABB844200928C33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				046949EB1ABB844200928C33 /* Images.xcassets */,
+				04694A041ABB88AB00928C33 /* ObjectiveC */,
+				04694A051ABB88EF00928C33 /* ObjectiveC_Bridge.h */,
+				046949E31ABB844200928C33 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		046949F71ABB844200928C33 /* InvitePhoneBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				046949FA1ABB844200928C33 /* InvitePhoneBookTests.swift */,
+				046949F81ABB844200928C33 /* Supporting Files */,
+			);
+			path = InvitePhoneBookTests;
+			sourceTree = "<group>";
+		};
+		046949F81ABB844200928C33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				046949F91ABB844200928C33 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04694A041ABB88AB00928C33 /* ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				04694A061ABB88EF00928C33 /* AddressBook.h */,
+				04694A071ABB88EF00928C33 /* AddressBook.m */,
+				04694A091ABB89EC00928C33 /* ABRecordHolder.h */,
+				04694A0A1ABB89EC00928C33 /* ABRecordHolder.m */,
+			);
+			name = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		04694A0C1ABB8CA500928C33 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				04694A0D1ABB8CB800928C33 /* MainViewController.swift */,
+				04694A101ABB8EBA00928C33 /* InviteViewController.swift */,
+			);
+			name = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		04694A0F1ABB8EAF00928C33 /* invitebook */ = {
+			isa = PBXGroup;
+			children = (
+				04694A171ABB992D00928C33 /* protocols */,
+				04694A1C1ABB99A000928C33 /* models */,
+				04694A141ABB990900928C33 /* data */,
+				04694A1D1ABB9A5200928C33 /* generators */,
+				04694A261ABB9CFE00928C33 /* view */,
+				04694A121ABB923C00928C33 /* PhoneBookViewController.swift */,
+			);
+			name = invitebook;
+			sourceTree = "<group>";
+		};
+		04694A141ABB990900928C33 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				04694A151ABB991200928C33 /* TableData.swift */,
+				04694A201ABB9AC700928C33 /* PBRecord.swift */,
+				04694A221ABB9AF400928C33 /* ExtendedPBRecord.swift */,
+				04694A291ABBA04000928C33 /* TableViewConfiguration.swift */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		04694A171ABB992D00928C33 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				04694A1A1ABB996100928C33 /* ListGeneratorProtocol.swift */,
+				04694A181ABB994900928C33 /* CellDataProtocol.swift */,
+				04694A2B1ABBA0C000928C33 /* PhoneBookViewControllerDelegate.swift */,
+			);
+			name = protocols;
+			sourceTree = "<group>";
+		};
+		04694A1C1ABB99A000928C33 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				04694A241ABB9B6000928C33 /* PhoneBookModel.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		04694A1D1ABB9A5200928C33 /* generators */ = {
+			isa = PBXGroup;
+			children = (
+				04694A1E1ABB9A8E00928C33 /* OrderedListGenerator.swift */,
+			);
+			name = generators;
+			sourceTree = "<group>";
+		};
+		04694A261ABB9CFE00928C33 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				04694A271ABB9D0600928C33 /* UIInviteTableViewCell.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		04694A2D1ABBA1EC00928C33 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				04694A2E1ABBA1FD00928C33 /* BoolValueChecker.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		0497EB451ABC3E05006BB0BC /* models */ = {
+			isa = PBXGroup;
+			children = (
+				0497EB461ABC3E0E006BB0BC /* InviteModel.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		0497EB481ABC4940006BB0BC /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0497EB491ABC4948006BB0BC /* InviteViewControllerDelegate.swift */,
+			);
+			name = protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		046949DE1ABB844200928C33 /* InvitePhoneBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046949FE1ABB844200928C33 /* Build configuration list for PBXNativeTarget "InvitePhoneBook" */;
+			buildPhases = (
+				046949DB1ABB844200928C33 /* Sources */,
+				046949DC1ABB844200928C33 /* Frameworks */,
+				046949DD1ABB844200928C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvitePhoneBook;
+			productName = InvitePhoneBook;
+			productReference = 046949DF1ABB844200928C33 /* InvitePhoneBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		046949F31ABB844200928C33 /* InvitePhoneBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04694A011ABB844200928C33 /* Build configuration list for PBXNativeTarget "InvitePhoneBookTests" */;
+			buildPhases = (
+				046949F01ABB844200928C33 /* Sources */,
+				046949F11ABB844200928C33 /* Frameworks */,
+				046949F21ABB844200928C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046949F61ABB844200928C33 /* PBXTargetDependency */,
+			);
+			name = InvitePhoneBookTests;
+			productName = InvitePhoneBookTests;
+			productReference = 046949F41ABB844200928C33 /* InvitePhoneBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		046949D71ABB844200928C33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = dimpiax;
+				TargetAttributes = {
+					046949DE1ABB844200928C33 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					046949F31ABB844200928C33 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 046949DE1ABB844200928C33;
+					};
+				};
+			};
+			buildConfigurationList = 046949DA1ABB844200928C33 /* Build configuration list for PBXProject "InvitePhoneBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 046949D61ABB844200928C33;
+			productRefGroup = 046949E01ABB844200928C33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				046949DE1ABB844200928C33 /* InvitePhoneBook */,
+				046949F31ABB844200928C33 /* InvitePhoneBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		046949DD1ABB844200928C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046949EF1ABB844200928C33 /* LaunchScreen.xib in Resources */,
+				046949EC1ABB844200928C33 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046949F21ABB844200928C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046949DB1ABB844200928C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04694A131ABB923C00928C33 /* PhoneBookViewController.swift in Sources */,
+				04694A2A1ABBA04000928C33 /* TableViewConfiguration.swift in Sources */,
+				04694A2F1ABBA1FD00928C33 /* BoolValueChecker.swift in Sources */,
+				046949E51ABB844200928C33 /* AppDelegate.swift in Sources */,
+				04694A1B1ABB996100928C33 /* ListGeneratorProtocol.swift in Sources */,
+				04694A251ABB9B6000928C33 /* PhoneBookModel.swift in Sources */,
+				0497EB471ABC3E0E006BB0BC /* InviteModel.swift in Sources */,
+				04694A1F1ABB9A8E00928C33 /* OrderedListGenerator.swift in Sources */,
+				04694A0B1ABB89EC00928C33 /* ABRecordHolder.m in Sources */,
+				04694A081ABB88EF00928C33 /* AddressBook.m in Sources */,
+				04694A161ABB991200928C33 /* TableData.swift in Sources */,
+				04694A191ABB994900928C33 /* CellDataProtocol.swift in Sources */,
+				04694A211ABB9AC700928C33 /* PBRecord.swift in Sources */,
+				04694A281ABB9D0600928C33 /* UIInviteTableViewCell.swift in Sources */,
+				04694A0E1ABB8CB800928C33 /* MainViewController.swift in Sources */,
+				04694A111ABB8EBA00928C33 /* InviteViewController.swift in Sources */,
+				04694A231ABB9AF400928C33 /* ExtendedPBRecord.swift in Sources */,
+				0497EB4A1ABC4948006BB0BC /* InviteViewControllerDelegate.swift in Sources */,
+				04694A2C1ABBA0C000928C33 /* PhoneBookViewControllerDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046949F01ABB844200928C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046949FB1ABB844200928C33 /* InvitePhoneBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		046949F61ABB844200928C33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046949DE1ABB844200928C33 /* InvitePhoneBook */;
+			targetProxy = 046949F51ABB844200928C33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		046949ED1ABB844200928C33 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046949EE1ABB844200928C33 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		046949FC1ABB844200928C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		046949FD1ABB844200928C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		046949FF1ABB844200928C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = InvitePhoneBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = InvitePhoneBook/ObjectiveC_Bridge.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04694A001ABB844200928C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = InvitePhoneBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = InvitePhoneBook/ObjectiveC_Bridge.h;
+			};
+			name = Release;
+		};
+		04694A021ABB844200928C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InvitePhoneBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvitePhoneBook.app/InvitePhoneBook";
+			};
+			name = Debug;
+		};
+		04694A031ABB844200928C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InvitePhoneBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvitePhoneBook.app/InvitePhoneBook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		046949DA1ABB844200928C33 /* Build configuration list for PBXProject "InvitePhoneBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046949FC1ABB844200928C33 /* Debug */,
+				046949FD1ABB844200928C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046949FE1ABB844200928C33 /* Build configuration list for PBXNativeTarget "InvitePhoneBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046949FF1ABB844200928C33 /* Debug */,
+				04694A001ABB844200928C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04694A011ABB844200928C33 /* Build configuration list for PBXNativeTarget "InvitePhoneBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04694A021ABB844200928C33 /* Debug */,
+				04694A031ABB844200928C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 046949D71ABB844200928C33 /* Project object */;
+}

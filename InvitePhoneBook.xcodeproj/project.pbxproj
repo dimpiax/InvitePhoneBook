@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045364CB1ABDACB2002785DD /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045364CA1ABDACB2002785DD /* UIView+.swift */; };
 		046949E51ABB844200928C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046949E41ABB844200928C33 /* AppDelegate.swift */; };
 		046949EC1ABB844200928C33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046949EB1ABB844200928C33 /* Images.xcassets */; };
 		046949EF1ABB844200928C33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046949ED1ABB844200928C33 /* LaunchScreen.xib */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045364CA1ABDACB2002785DD /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		046949DF1ABB844200928C33 /* InvitePhoneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvitePhoneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046949E31ABB844200928C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046949E41ABB844200928C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				046949E41ABB844200928C33 /* AppDelegate.swift */,
 				046949ED1ABB844200928C33 /* LaunchScreen.xib */,
 				046949E21ABB844200928C33 /* Supporting Files */,
+				045364CA1ABDACB2002785DD /* UIView+.swift */,
 			);
 			path = InvitePhoneBook;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				04694A2A1ABBA04000928C33 /* TableViewConfiguration.swift in Sources */,
 				04694A2F1ABBA1FD00928C33 /* BoolValueChecker.swift in Sources */,
 				046949E51ABB844200928C33 /* AppDelegate.swift in Sources */,
+				045364CB1ABDACB2002785DD /* UIView+.swift in Sources */,
 				04694A1B1ABB996100928C33 /* ListGeneratorProtocol.swift in Sources */,
 				04694A251ABB9B6000928C33 /* PhoneBookModel.swift in Sources */,
 				0497EB471ABC3E0E006BB0BC /* InviteModel.swift in Sources */,

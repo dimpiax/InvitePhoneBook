@@ -24,7 +24,7 @@ class InviteModel {
         var attrText = NSMutableAttributedString(string: "invite people\nby phones", attributes: [NSForegroundColorAttributeName: UIColor.blackColor(), NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 18)!])
         attrText.setAttributes([NSForegroundColorAttributeName: UIColor.blackColor(), NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 27)!], range: NSMakeRange(14, 9))
         
-        return attrText.copy() as NSAttributedString
+        return attrText.copy() as! NSAttributedString
     }
     
     func carry(value: PBRecord) {
@@ -44,7 +44,7 @@ class InviteModel {
     
     func listenDataCountChange(callback: Bool -> Void) {
         if _changeChecker == nil {
-            _changeChecker = BoolValueChecker(f: { ~?self._data })
+            _changeChecker = BoolValueChecker(f: {[weak self] in ~?self!._data })
         }
         _changeChecker!.isChange(callback)
     }

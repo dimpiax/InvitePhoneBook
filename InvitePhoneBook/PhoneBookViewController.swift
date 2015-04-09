@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import UIKIt
+import UIKit
 
 class PhoneBookViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var model: PhoneBookModel!
@@ -77,7 +77,7 @@ class PhoneBookViewController: UIViewController, UITableViewDataSource, UITableV
     // * PROTOCOLS
     // UITableViewDataSource
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UIInviteTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UIInviteTableViewCell
         cell.check = _data?.getItem(indexPath)?.selected ?? false
         cell.textLabel!.text = _data?.getItem(indexPath)?.title ?? "no data for index: \(indexPath.row)"
         return cell

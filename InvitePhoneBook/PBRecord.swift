@@ -50,8 +50,8 @@ class PBRecord: CellDataProtocol, Printable, Equatable {
             for i in 0..<ABMultiValueGetCount(phonesList) {
                 let multiValueCopy = ABMultiValueCopyLabelAtIndex(phonesList, i)?.takeRetainedValue() as? String
                 if multiValueCopy != nil {
-                    let label = ABAddressBookCopyLocalizedLabel(multiValueCopy).takeRetainedValue() as String
-                    let phone = ABMultiValueCopyValueAtIndex(phonesList, i).takeRetainedValue() as String
+                    let label = ABAddressBookCopyLocalizedLabel(multiValueCopy).takeRetainedValue() as! String
+                    let phone = ABMultiValueCopyValueAtIndex(phonesList, i).takeRetainedValue() as! String
                     
                     if _phones == nil {
                         _phones = []
@@ -96,7 +96,7 @@ class PBRecord: CellDataProtocol, Printable, Equatable {
             title += "\(lastName) "
         }
         if !title.isEmpty {
-            title = title.substringToIndex(advance(title.startIndex, countElements(title)-1))
+            title = title.substringToIndex(advance(title.startIndex, count(title)-1))
         }
         else {
             _unknownTitle = true

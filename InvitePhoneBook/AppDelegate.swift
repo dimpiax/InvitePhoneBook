@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow!
+    var window: UIWindow?
     
     private var _mainViewController: MainViewController!
 
@@ -20,9 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self._mainViewController = MainViewController()
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window.backgroundColor = UIColor.whiteColor()
-        window.rootViewController = _mainViewController
-        window.makeKeyAndVisible()
+        window!.backgroundColor = UIColor.whiteColor()
+        window!.rootViewController = _mainViewController
+        window!.makeKeyAndVisible()
         
         return true
     }

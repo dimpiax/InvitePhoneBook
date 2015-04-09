@@ -34,7 +34,7 @@ class InviteViewController: UIViewController, PhoneBookViewControllerDelegate {
         view.addSubview(_title)
         
         // create button of completion
-        self._doneButton = UIButton.buttonWithType(.Custom) as UIButton
+        self._doneButton = UIButton.buttonWithType(.Custom) as! UIButton
         _doneButton.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 18)
         _doneButton.setTitle("Send", forState: .Normal)
         _doneButton.setTitleColor(UIColor(red: 0, green: 0.48, blue: 1, alpha: 1), forState: .Normal)
@@ -67,13 +67,31 @@ class InviteViewController: UIViewController, PhoneBookViewControllerDelegate {
         _phoneBookViewController.view.frame = CGRectMake(0, yOffset+abYPosition, CGRectGetWidth(view.bounds), CGRectGetHeight(view.bounds)-abYPosition-yOffset)
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        _phoneBookViewController.model.requestBook {[weak self] value in
+            if !value && !self!._phoneBookViewController.model.isRequested {
+                let alertView = UIAlertController(title: "Invite people to have fun with", message: "Allow this app to access your contacts", preferredStyle: .ActionSheet)
+                alertView.addAction(UIAlertAction(title: "Allow", style: .Default, handler: { value in
+                    let url = NSURL(string: UIApplicationOpenSettingsURLString)!
+                    UIApplication.sharedApplication().openURL(url)
+                }))
+                alertView.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+                
+                self!.presentViewController(alertView, animated: true, completion: nil)
+            }
+        }
+    }
+    
     // *** METHODS
     // * FUNCTIONS    
     private func defineDoneButtonState() {
-        _inviteModel.listenDataCountChange { value in
-            self._doneButton.setTitle(value ? "Send" : "Cancel", forState: .Normal)
-            self._doneButton.sizeToFit()
-            self.updateDoneButtonPosition(self.topLayoutGuide.length, height: 80)
+        _inviteModel.listenDataCountChange {[weak self] value in
+            let _self = self!
+            _self._doneButton.setTitle(value ? "Send" : "Cancel", forState: .Normal)
+            _self._doneButton.sizeToFit()
+            _self.updateDoneButtonPosition(_self.topLayoutGuide.length, height: 80)
         }
     }
     
@@ -83,7 +101,7 @@ class InviteViewController: UIViewController, PhoneBookViewControllerDelegate {
     
     // * ACTIONS
     func doneDidTapped() {
-        delegate?.dataDidDefine(_inviteModel.data?)
+        delegate?.dataDidDefine(_inviteModel.data)
         dismissViewControllerAnimated(true, completion: nil)
     }
     

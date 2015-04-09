@@ -13,21 +13,26 @@ class PhoneBookModel {
     
     private var _records: [PBRecord]?
     
-    init() {
-        let status = ABAddressBookGetAuthorizationStatus()
-        if status == .Denied || status == .Restricted {
-            println("Address book status: \(status)")
-            return
+    var isRequested: Bool {
+        return _addressBook != nil
+    }
+    
+    func requestBook(completion: Bool -> Void) {
+        switch ABAddressBookGetAuthorizationStatus() {
+            case .Authorized, .NotDetermined:
+                _addressBook = AddressBook()
+                completion(true)
+                
+            case .Restricted, .Denied:
+                completion(false)
         }
-        
-        _addressBook = AddressBook()
     }
     
     func getRecords(completeCallback: (records: [PBRecord]?) -> Void) -> [PBRecord]? {
         if _records == nil {
-            refreshRecords { value in
+            refreshRecords {[weak self] value in
                 NSOperationQueue.mainQueue().addOperationWithBlock {
-                    completeCallback(records: self._records)
+                    completeCallback(records: self!._records)
                 }
             }
         }
@@ -37,10 +42,15 @@ class PhoneBookModel {
     func refreshRecords(completeCallback: Bool -> Void) {
         _records = nil
         
-        _addressBook.requestRecords { (array, error) in
+        if !isRequested {
+            completeCallback(false)
+            return
+        }
+        
+        _addressBook.requestRecords {[weak self] (array, error) in
             if array != nil {
                 if let data = array as? [ABRecordHolder] {
-                    self.wrapRecords(data)
+                    self!.wrapRecords(data)
                     completeCallback(true)
                 }
             }

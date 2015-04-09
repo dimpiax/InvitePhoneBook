@@ -16,7 +16,7 @@ class MainViewController: UIViewController, InviteViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self._inviteShowButton = UIButton.buttonWithType(.System) as UIButton
+        self._inviteShowButton = UIButton.buttonWithType(.System) as! UIButton
         _inviteShowButton.setTitle("Open invite book", forState: .Normal)
         _inviteShowButton.sizeToFit()
         _inviteShowButton.addTarget(self, action: "inviteShowButtonDidTapped", forControlEvents: .TouchUpInside)

@@ -44,6 +44,6 @@ class TableData<T: CellDataProtocol, U: ListGeneratorProtocol where U.Item == T>
     }
     
     func getSectionIndexTitlesForTableView() -> [String]? {
-        return _listGenerator?.titles?
+        return _listGenerator?.titles
     }
 }
